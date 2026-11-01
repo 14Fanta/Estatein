@@ -1,0 +1,14 @@
+/* BASE */
+@import url('/css/base/globals.css');
+@import url('/css/base/reset.css');
+@import url('/css/base/normalize.css');
+
+/* FONTS */
+@import url('/css/base/fonts.css');
+
+/* FILES */
+@import url('/css/header.css');
+@import url('/css/hero.css');
+@import url('/css/properties.css');
+@import url('/css/clients.css');
+
