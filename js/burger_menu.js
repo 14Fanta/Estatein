@@ -4,6 +4,7 @@ const contactBtn = document.querySelector('.header_btn-contact')
 const crossMenu = document.querySelector('.burger_menu-icon__menu-cross')
 const burgerMenu = document.querySelector('.burger_menu-icon__menu-burger')
 
+
 addEventListener('click', ({ target }) => {
 	if (target.matches('.burger_menu')) {
 		nav.classList.toggle('header_menu--open')

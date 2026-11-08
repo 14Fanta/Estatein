@@ -3,37 +3,69 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Find your next home with Estatein. Explore villas, apartments and cottages, plus expert support with buying, selling, property management and investments."
+		/>
 		<link rel="stylesheet" href="./index.css" />
 		<title>Home</title>
 	</head>
 	<body class="page_body">
 		<header class="header">
+			<div class="header__banner">
+				<div class="header__banner-container">
+					<div class="header__banner-content">
+						<p class="header__banner-text">✨Discover Your Dream Property with Estatein<a
+								href="#"
+								class="header__banner-link"
+								>Learn More</a
+							>
+						</p>
+					</div>
+					<button class="header__banner--close" aria-label="Закрыть баннер">
+						<img
+							src="./others/img/svg/banner-close.svg"
+							width="32"
+							height="32"
+							alt=""
+						/>
+					</button>
+				</div>
+			</div>
 			<div class="container header__container">
 				<a href="/" class="header_link"
 					><img
-						src="./others/img/svg/Logo.svg"
+						src="./others/img/svg/logo.svg"
 						alt="Логотип Estatein"
 						width="160"
 						height="48"
-						class="header_link-logo"
+						class="logo"
 						loading="lazy"
 				/></a>
 				<nav class="header_menu">
 					<ul class="header_menu-list">
 						<li class="header_menu-item">
-							<a href="/" class="header_menu-link"> Home </a>
+							<a href="/" class="header_menu-link header_menu-home"> Home </a>
 						</li>
 						<li class="header_menu-item">
-							<a href="#" class="header_menu-link"> About Us </a>
+							<a href="./about-us.html" class="header_menu-link header_menu-us">
+								About Us
+							</a>
 						</li>
 						<li class="header_menu-item">
-							<a href="#" class="header_menu-link"> Properties </a>
+							<a href="#" class="header_menu-link header_menu-prop">
+								Properties
+							</a>
 						</li>
 						<li class="header_menu-item">
-							<a href="#" class="header_menu-link"> Services </a>
+							<a href="#" class="header_menu-link header_menu-serv">
+								Services
+							</a>
 						</li>
 					</ul>
-					<a href="tel:+79180641037" class="header_btn-contact">Contact Us</a>
+					<a href="tel:+79180641037" class="button header_btn-contact"
+						>Contact Us</a
+					>
 				</nav>
 				<button class="burger_menu" aria-label="Открыть/закрыть меню">
 					<svg
@@ -66,16 +98,18 @@
 								Explore our listings to find the home that matches your dreams.
 							</p>
 							<div class="hero__content-buttons_wrapper">
-								<button
+								<a
+									href="#"
 									class="hero__content-button hero__content-button__learn-more"
 								>
 									Learn More
-								</button>
-								<button
+								</a>
+								<a
+									href="#"
 									class="hero__content-button hero__content-button__properties"
 								>
 									Browse Properties
-								</button>
+								</a>
 							</div>
 							<div class="hero__content-list">
 								<article class="hero__content-item">
@@ -114,7 +148,6 @@
 									width="920"
 									height="814"
 									alt="3D-иллюстрация современных небоскрёбов с синими стеклянными фасадами на тёмном фоне"
-									loading="lazy"
 								/>
 							</picture>
 						</div>
@@ -201,7 +234,14 @@
 				</div>
 			</section>
 			<section class="properties">
-				<div class="container properties_container">
+				<div class="container properties__container">
+					<div class="decoration-stars">
+						<img
+							class="decoration-stars__img"
+							src="./others/img/svg/decoration-stars.svg"
+							alt=""
+						/>
+					</div>
 					<h2 class="properties__title second-title">Featured Properties</h2>
 					<div class="wrapper">
 						<p class="wrapper-text text-grey">
@@ -210,7 +250,7 @@
 							available through Estatein. Click "View Details" for more
 							information.
 						</p>
-						<button class="wrapper-button">View all properties</button>
+						<a href="#" class="button wrapper-button">View all properties</a>
 					</div>
 					<div class="properties__cards-wrapper">
 						<article class="properties__cards-card">
@@ -256,15 +296,15 @@
 									<h4 class="properties__cards-price__title">Price</h4>
 									<p class="properties__cards-price">$550,000</p>
 								</div>
-								<button class="properties__cards-more">
+								<a href="#" class="properties__cards-more">
 									View Property Details
-								</button>
+								</a>
 							</div>
 						</article>
 						<article class="properties__cards-card">
 							<picture class="properties__cards-img">
 								<source
-									srcset="./others/img/properties/Metropolitan.webp"
+									srcset="/others/img/properties/Metropolitan.webp"
 									type="image/webp"
 								/>
 								<img
@@ -304,9 +344,9 @@
 									<h4 class="properties__cards-price__title">Price</h4>
 									<p class="properties__cards-price">$550,000</p>
 								</div>
-								<button class="properties__cards-more">
+								<a href="#" class="button properties__cards-more">
 									View Property Details
-								</button>
+								</a>
 							</div>
 						</article>
 						<article class="properties__cards-card">
@@ -352,9 +392,9 @@
 									<h4 class="properties__cards-price__title">Price</h4>
 									<p class="properties__cards-price">$550,000</p>
 								</div>
-								<button class="properties__cards-more">
+								<a href="#" class="button properties__cards-more">
 									View Property Details
-								</button>
+								</a>
 							</div>
 						</article>
 					</div>
@@ -363,7 +403,7 @@
 							<span class="cards-slide--accent">01</span> of 60
 						</p>
 						<div class="cards-buttons__wrapper">
-							<button class="cards-button">
+							<button href="#" class="cards-button" aria-label="Кнопка влево">
 								<svg
 									width="30"
 									height="30"
@@ -372,7 +412,7 @@
 									<use href="./others/img/svg/sprite.svg#arrow-left"></use>
 								</svg>
 							</button>
-							<button class="cards-button">
+							<button class="cards-button" aria-label="Кнопка вправо">
 								<svg
 									width="30"
 									height="30"
@@ -387,6 +427,13 @@
 			</section>
 			<section class="clients">
 				<div class="container clients__container">
+					<div class="decoration-stars">
+						<img
+							class="decoration-stars__img"
+							src="./others/img/svg/decoration-stars.svg"
+							alt=""
+						/>
+					</div>
 					<h2 class="clients_title second-title">What Our Clients Say</h2>
 					<div class="wrapper">
 						<p class="wrapper-text text-grey">
@@ -394,7 +441,7 @@
 							valued clients. Discover why they chose Estatein for their real
 							estate needs.
 						</p>
-						<button class="wrapper-button clients__button">View All Testimonials</button>
+						<a href="#" class="button wrapper-button">View All Testimonials</a>
 					</div>
 					<div class="clients__wrapper">
 						<article class="clients__wrapper-comment">
@@ -427,7 +474,9 @@
 							</header>
 							<main>
 								<section class="clients__wrapper-information">
-									<h3 class="clients__wrapper-title title-card">Exceptional Service!</h3>
+									<h3 class="clients__wrapper-title title-card">
+										Exceptional Service!
+									</h3>
 									<div class="clients__wrapper-content">
 										<p class="clients__wrapper-text">
 											Our experience with Estatein was outstanding. Their team's
@@ -486,7 +535,9 @@
 							</header>
 							<main class="clients__wrapper-main">
 								<section class="clients__wrapper-information">
-									<h3 class="clients__wrapper-title title-card">Efficient and Reliable</h3>
+									<h3 class="clients__wrapper-title title-card">
+										Efficient and Reliable
+									</h3>
 									<div class="clients__wrapper-content">
 										<p class="clients__wrapper-text">
 											Estatein provided us with top-notch service. They helped
@@ -545,7 +596,9 @@
 							</header>
 							<main class="clients__wrapper-main">
 								<section class="clients__wrapper-information">
-									<h3 class="clients__wrapper-title title-card">Trusted Advisors</h3>
+									<h3 class="clients__wrapper-title title-card">
+										Trusted Advisors
+									</h3>
 									<div class="clients__wrapper-content">
 										<p class="clients__wrapper-text">
 											The Estatein team guided us through the entire buying
@@ -574,7 +627,9 @@
 								</div>
 							</footer>
 						</article>
-						<article class="clients__wrapper-comment clients__wrapper-comment--hidden">
+						<article
+							class="clients__wrapper-comment clients__wrapper-comment--hidden"
+						>
 							<header class="clients__wrapper-rate">
 								<span class="clients__wrapper-star">
 									<svg width="24" height="24">
@@ -604,7 +659,9 @@
 							</header>
 							<main class="clients__wrapper-main">
 								<section class="clients__wrapper-information">
-									<h3 class="clients__wrapper-title title-card">Trusted Advisors</h3>
+									<h3 class="clients__wrapper-title title-card">
+										Trusted Advisors
+									</h3>
 									<div class="clients__wrapper-content">
 										<p class="clients__wrapper-text">
 											The Estatein team guided us through the entire buying
@@ -640,16 +697,16 @@
 							<span class="cards-slide--accent">01</span> of 60
 						</p>
 						<div class="cards-buttons__wrapper">
-							<button class="cards-button">
+							<button class="cards-button" aria-label="Кнопка влево">
 								<svg
 									width="30"
 									height="30"
-									class="cards-arrow properties__cards-arrow__left"
+									class="cards-arrow cards-arrow__left"
 								>
 									<use href="./others/img/svg/sprite.svg#arrow-left"></use>
 								</svg>
 							</button>
-							<button class="cards-button">
+							<button class="cards-button" aria-label="Кнопка вправо">
 								<svg
 									width="30"
 									height="30"
@@ -662,8 +719,317 @@
 					</div>
 				</div>
 			</section>
+			<section class="faq">
+				<div class="container faq__container">
+					<div class="decoration-stars">
+						<img
+							class="decoration-stars__img"
+							src="./others/img/svg/decoration-stars.svg"
+							alt=""
+						/>
+					</div>
+					<h2 class="faq__title second-title">Frequently Asked Questions</h2>
+					<div class="faq_content">
+						<div class="wrapper">
+							<p class="wrapper-text text-grey">
+								Find answers to common questions about Estatein's services,
+								property listings, and the real estate process. We're here to
+								provide clarity and assist you every step of the way.
+							</p>
+							<a href="#" class="button wrapper-button">View All FAQ’s</a>
+						</div>
+						<section class="faq__cards-container">
+							<article class="faq__card-card">
+								<header>
+									<h3 class="faq__card-title">
+										How do I search for properties on Estatein?
+									</h3>
+								</header>
+								<main>
+									<p class="faq__card-text">
+										Learn how to use our user-friendly search tools to find
+										properties that match your criteria.
+									</p>
+								</main>
+								<footer><a href="#" class="button">Read more</a></footer>
+							</article>
+							<article class="faq__card-card">
+								<header>
+									<h3 class="faq__card-title">
+										What documents do I need to sell my property through
+										Estatein?
+									</h3>
+								</header>
+								<main>
+									<p class="faq__card-text">
+										Find out about the necessary documentation for listing your
+										property with us.
+									</p>
+								</main>
+								<footer><a href="#" class="button">Read more</a></footer>
+							</article>
+							<article class="faq__card-card">
+								<header>
+									<h3 class="faq__card-title">
+										How can I contact an Estatein agent?
+									</h3>
+								</header>
+								<main>
+									<p class="faq__card-text">
+										Discover the different ways you can get in touch with our
+										experienced agents.
+									</p>
+								</main>
+								<footer><a href="#" class="button">Read more</a></footer>
+							</article>
+						</section>
+
+						<div class="cards-switch__wrapper">
+							<p class="cards-slide">
+								<span class="cards-slide--accent">01</span> of 60
+							</p>
+							<div class="cards-buttons__wrapper">
+								<button class="cards-button" aria-label="Кнопка влево">
+									<svg
+										width="30"
+										height="30"
+										class="cards-arrow cards-arrow__left"
+									>
+										<use href="./others/img/svg/sprite.svg#arrow-left"></use>
+									</svg>
+								</button>
+								<button class="cards-button" aria-label="Кнопка вправо">
+									<svg
+										width="30"
+										height="30"
+										class="cards-arrow cards-arrow__right"
+									>
+										<use href="./others/img/svg/sprite.svg#arrow-left"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="container footer__container">
+				<section
+					class="footer__property"
+					aria-labelledby="property-search-heading"
+				>
+					<div class="footer__property-decor--left">
+						<img
+							src="others/img/footer/footer_decor-first.png"
+							width="546"
+							height="308"
+						/>
+					</div>
+					<h2
+						class="footer__property-title second-title"
+						id="property-search-heading"
+					>
+						Start Your Real Estate Journey Today
+					</h2>
+					<div class="footer__property-content">
+						<p class="footer__property-desc text-grey">
+							Your dream property is just a click away. Whether you're looking
+							for a new home, a strategic investment, or expert real estate
+							advice, Estatein is here to assist you every step of the way. Take
+							the first step towards your real estate goals and explore our
+							available properties or get in touch with our team for
+							personalized assistance.
+						</p>
+						<a href="#" class="button footer__property-button"
+							>Explore Properties</a
+						>
+					</div>
+					<div class="footer__property-decor--right">
+						<img
+							src="others/img/footer/footer_decor-second.png"
+							width="633"
+							height="331"
+						/>
+					</div>
+				</section>
+				<section class="footer__navigation">
+					<div class="footer__navigation-email">
+						<a href="/" class="logo"
+							><img
+								src="./others/img/svg/logo.svg"
+								alt="Логотип Estatein"
+								width="160"
+								height="48"
+								class="logo"
+						/></a>
+
+						<form method="get" class="footer__form">
+							<svg width="24" height="24" class="footer__form-email">
+								<use href="./others/img/svg/email-ico.svg"></use>
+							</svg>
+							<input
+								class="footer__form-input"
+								type="email"
+								name="email"
+								autocomplete="email"
+								placeholder="Enter Your Email"
+								required
+							/>
+							<button type="submit" aria-label="Отправить email">
+								<svg width="30" height="30">
+									<use href="./others/img/svg/telegram-ico.svg"></use>
+								</svg>
+							</button>
+						</form>
+					</div>
+					<nav class="footer__navigation-menu">
+						<div class="footer__navigation-group">
+							<h3 class="footer__navigation-title">Home</h3>
+							<ul class="footer__navigation-list">
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Hero Section</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Features</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Properties</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Testimonials</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">FAQs</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__navigation-group">
+							<h3 class="footer__navigation-title">About us</h3>
+							<ul class="footer__navigation-list">
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Our Story</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Our Works</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">How It Works</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Our Team</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Our Clients</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__navigation-group">
+							<h3 class="footer__navigation-title">Properties</h3>
+							<ul class="footer__navigation-list">
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Portfolio</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Categories</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__navigation-group">
+							<h3 class="footer__navigation-title">Services</h3>
+							<ul class="footer__navigation-list">
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link"
+										>Valuation Mastery</a
+									>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link"
+										>Strategic Marketing</a
+									>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link"
+										>Negotiation Wizardry</a
+									>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link"
+										>Closing Success</a
+									>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link"
+										>Property Management</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__navigation-group">
+							<h3 class="footer__navigation-title">Contact Us</h3>
+							<ul class="footer__navigation-list">
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Contact Form</a>
+								</li>
+								<li class="footer__navigation-item">
+									<a href="#" class="footer__navigation-link">Our Offices</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</section>
+			</div>
+			<div class="footer__bottom">
+				<div class="container footer__bottom-container">
+					<p class="footer__copyright">
+						@2023 Estatein, Inc. All Rights Reserved.
+					</p>
+					<a href="#" class="footer__terms">Terms &amp; Conditions</a>
+					<ul class="footer__socials" aria-label="Ссылки на соцсети">
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link"
+								><img
+									src="./others/img/footer/facebook.png"
+									width="52"
+									height="52"
+									alt="иконка Facebook"
+							/></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link"
+								><img
+									src="./others/img/footer/instagram.png"
+									width="52"
+									height="52"
+									alt="иконка Instagram"
+							/></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link"
+								><img
+									src="./others/img/footer/twitter.png"
+									width="52"
+									height="52"
+									alt="иконка Twitter"
+							/></a>
+						</li>
+						<li class="footer__social-item">
+							<a href="#" class="footer__social-link"
+								><img
+									src="./others/img/footer/youtube.png"
+									width="52"
+									height="52"
+									alt="иконка Youtube"
+							/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 	<script type="module" src="./js/main.js"></script>
 </html>
